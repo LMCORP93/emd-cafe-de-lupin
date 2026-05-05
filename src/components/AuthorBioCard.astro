@@ -6,17 +6,13 @@ const author = config.author;
 
 <section class="author-bio-card" aria-labelledby="author-bio-title">
   <div class="author-bio-card__avatar-wrap">
-    <img src={author.avatar} alt="Portrait éditorial de Tim Review" class="author-bio-card__avatar" loading="lazy" />
+    <img src={author.avatar} alt="Portrait éditorial de Tim" class="author-bio-card__avatar" loading="lazy" />
   </div>
   <div class="author-bio-card__content">
     <p class="author-bio-card__eyebrow">À propos de l’auteur</p>
-    <h2 id="author-bio-title">Tim Review</h2>
-    <p>
-      Tim Review analyse les compléments alimentaires avec une approche simple : comparer les formules, les prix, les avis clients et les conditions d’achat pour aider le lecteur à choisir plus vite, sans discours marketing inutile.
-    </p>
-    <p>
-      Ses guides sont construits à partir des informations publiques des marques, des compositions produits, des retours utilisateurs et des critères éditoriaux de LMC : transparence, rapport qualité-prix, sécurité d’usage et intérêt réel pour l’acheteur.
-    </p>
+    <h2 id="author-bio-title">Tim</h2>
+    <p>Tim compare les cafés aux champignons avec une grille simple : composition, dosage, goût, prix réel après code promo et cohérence des promesses. L’objectif est d’aider le lecteur à choisir une boisson utile au quotidien, pas seulement la marque la plus visible.</p>
+    <p>Ses analyses s’appuient sur les informations publiques des marques, les retours utilisateurs, les conditions d’achat et les critères éditoriaux LMC : transparence, rapport qualité-prix, prudence sur les allégations et intérêt concret pour l’acheteur.</p>
   </div>
 </section>
 
@@ -29,7 +25,7 @@ const author = config.author;
     padding: 1.25rem;
     border: 1px solid #eadfce;
     border-radius: 20px;
-    background: #f8f4ec;
+    background: #f4f2ec;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   }
 
@@ -43,12 +39,7 @@ const author = config.author;
     background: #fff;
   }
 
-  .author-bio-card__avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
+  .author-bio-card__avatar { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   .author-bio-card__eyebrow {
     margin: 0 0 .25rem;
