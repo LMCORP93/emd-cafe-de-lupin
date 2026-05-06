@@ -45,6 +45,7 @@ const { items } = Astro.props;
     if (!links || !chevron) return;
 
     function toggle() {
+      if (!links || !chevron || !trigger) return;
       const isHidden = links.classList.toggle('summary_hidden');
       chevron.classList.toggle('summary_chevron-up', isHidden);
       trigger.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
