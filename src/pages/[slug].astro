@@ -1,0 +1,96 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BlogHero from '@/components/BlogHero.astro';
+import FirstReview from '@/components/FirstReview.astro';
+import ReviewPromoCard from '@/components/ReviewPromoCard.astro';
+import TableOfContents from '@/components/TableOfContents.astro';
+import ContentImage from '@/components/ContentImage.astro';
+import InnerNote from '@/components/InnerNote.astro';
+import ComparisonTable from '@/components/ComparisonTable.astro';
+import FAQSection from '@/components/FAQSection.astro';
+import SidebarCTA from '@/components/SidebarCTA.astro';
+import config from '@/data/site.config';
+import { articlePages } from '@/data/articlePages';
+
+export function getStaticPaths() {
+  return articlePages.map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const primary = config.products[page.product] || config.products[0];
+const topProduct = config.products[0];
+const canonical = new URL(`/${page.slug}/`, config.domain).toString();
+const toAbs = (value: string) => /^https?:\/\//i.test(value) ? value : new URL(value, config.domain).toString();
+---
+
+<BaseLayout title={page.title} description={page.meta} ogImage={page.heroImage}>
+  <script type="application/ld+json" slot="json-ld" set:html={JSON.stringify({
+    '@context':'https://schema.org','@type':'Article',headline:page.h1,description:page.meta,image:toAbs(page.heroImage),author:{'@type':'Person',name:config.author.name},publisher:{'@type':'Organization',name:config.siteName},mainEntityOfPage:canonical,datePublished:'2026-05-11',dateModified:'2026-05-11'
+  })} />
+  <script type="application/ld+json" slot="json-ld" set:html={JSON.stringify({
+    '@context':'https://schema.org','@type':'FAQPage',mainEntity:page.faq.map((item) => ({'@type':'Question',name:item.question,acceptedAnswer:{'@type':'Answer',text:item.answer}}))
+  })} />
+
+  <BlogHero
+    title={page.h1}
+    description={page.meta}
+    author={config.author.name}
+    authorAvatar={config.author.avatar}
+    date="11 Mai 2026"
+    readingTime={page.readingTime}
+    breadcrumbs={[{ label: page.label, href: `/${page.slug}/` }]}
+    bannerImage={page.heroImage}
+    product={{ name: primary.name, image: primary.image, promoCode: primary.promoCode, promoPercent: primary.promoPercent, originalPrice: primary.originalPrice, discountPrice: primary.discountPrice, affiliateLink: primary.affiliateLink }}
+    showOfferBlock={false}
+    heroButton={{ text: 'Voir notre recommandation', href: '#recommandation' }}
+  />
+
+  <main style="background-color:#fff;">
+    <div class="container-large padding-global">
+      <div class="padding-section-medium">
+        <div class="blog-grid">
+          <div class="content-column">
+            <div id="intro">
+              <FirstReview
+                tag="En bref"
+                heading="Résumé rapide"
+                paragraphs={[...page.summaryParagraphs]}
+                assets={[...page.assets]}
+                considerations={[...page.considerations]}
+                product={{ brandName: primary.brand, brandLogoSrc: primary.brandLogo, rating: primary.rating, reviewLabel: `${primary.reviewCount} avis analysés`, ctaText: `Voir ${primary.brand}`, ctaLink: primary.affiliateLink }}
+              />
+            </div>
+
+            <div id="recommandation" class="promo-wrap"><ReviewPromoCard product={primary} /></div>
+            <TableOfContents items={[...page.toc]} />
+
+            {page.sections.map((section, index) => (
+              <section id={section.id} class="article-section rich-text">
+                <h2>{section.heading}</h2>
+                {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                {index === 1 && <ContentImage src={page.heroImage} alt={`${page.h1} - illustration éditoriale`} caption="Une bonne alternative au café doit être jugée sur le goût, le rituel et la tolérance au quotidien." />}
+                {index === 2 && <div class="mid-card-wrap"><ReviewPromoCard product={topProduct} /></div>}
+                {index === 3 && <InnerNote emoji="✅" text="Le bon choix n’est pas forcément le plus spectaculaire : c’est celui que vous aurez envie de boire régulièrement, sans gêne digestive ni excitation liée à la caféine." />}
+              </section>
+            ))}
+
+            <ComparisonTable title="Choix rapide" headers={[{ label:'Profil' }, { label:'Option conseillée' }]} rows={page.tableRows.map((row, i) => ({ cells: [...row], highlight: i === 0 }))} />
+            <div class="final-card-wrap"><ReviewPromoCard product={topProduct} /></div>
+            <section id="faq" class="faq-section"><FAQSection faq={[...page.faq]} title="Questions fréquentes" /></section>
+          </div>
+          <aside class="sidebar-column"><div class="sidebar-sticky"><SidebarCTA logoSrc={topProduct.brandLogo} productName={topProduct.name} brandName={topProduct.brand} promoCode={topProduct.promoCode} promoPercent={topProduct.promoPercent} originalPrice={topProduct.originalPrice} discountPrice={topProduct.discountPrice} ctaLink={topProduct.affiliateLink} heroImage={topProduct.image} rating={topProduct.rating} reviewCount={topProduct.reviewCount} /></div></aside>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .promo-wrap { margin: 1.5rem 0 1.5rem; }
+  .article-section { margin-top: 2.2rem; }
+  .article-section h2 { margin: 0 0 .9rem; line-height: 1.2; color:#242424; }
+  .article-section p { margin: 0; line-height: 1.78; color:#444; }
+  .article-section p + p { margin-top: 1rem; }
+  .mid-card-wrap, .final-card-wrap { margin: 2rem 0; }
+  .faq-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #f0ebe3; }
+</style>

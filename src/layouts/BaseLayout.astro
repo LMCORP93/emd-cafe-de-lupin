@@ -26,8 +26,8 @@ const robotsContent = config.isIndexable === false
   ? 'noindex, nofollow, noarchive, nosnippet, noimageindex'
   : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
 
-// Auto-generate nav links from pages config (max 3 words each)
-const navLinks = config.pages.map(p => ({ label: p.label, href: p.slug }));
+// Header court pour éviter une navbar illisible ; footer garde toutes les pages.
+const navLinks = config.pages.slice(0, 5).map(p => ({ label: p.label, href: p.slug }));
 const headerCtaLink = config.products[0].affiliateLink;
 const footerLinks = [
   { label: 'Accueil', href: '/' },

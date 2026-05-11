@@ -173,7 +173,17 @@ const config: SiteConfig = {
     { id: 'faq', label: 'FAQ' },
   ],
   pages: [
-    { type: 'comparatif', label: 'Comparatif café de lupin', slug: '/' },
+    { type: 'comparatif', label: 'Comparatif', slug: '/' },
+    { type: 'blog', label: "Avis Lupi Coffee", slug: '/avis-lupi-coffee/' },
+    { type: 'blog', label: "Avis Arsène", slug: '/avis-arsene-boisson/' },
+    { type: 'blog', label: "Danger", slug: '/cafe-de-lupin-danger/' },
+    { type: 'blog', label: "Bienfaits", slug: '/cafe-de-lupin-bienfaits/' },
+    { type: 'blog', label: "Lupin vs café", slug: '/cafe-de-lupin-vs-cafe/' },
+    { type: 'blog', label: "Sans caféine", slug: '/alternative-au-cafe-sans-cafeine/' },
+    { type: 'blog', label: "Instantané", slug: '/cafe-de-lupin-instantane/' },
+    { type: 'blog', label: "Recette", slug: '/cafe-de-lupin-recette/' },
+    { type: 'blog', label: "Farine lupin", slug: '/farine-de-lupin-bienfaits/' },
+    { type: 'blog', label: "Graines lupin", slug: '/graines-de-lupin-bienfaits/' },
   ],
 };
 

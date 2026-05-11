@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Café de lupin vs café : le comparatif simple">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff3e0"/><stop offset="1" stop-color="#fffaf4"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#8a4b1e" flood-opacity=".18"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="1240" cy="170" r="210" fill="#ef7a1a" opacity=".10"/>
+  <circle cx="280" cy="760" r="260" fill="#6f4b2e" opacity=".10"/>
+  <g filter="url(#s)" transform="translate(500 205)">
+    <ellipse cx="300" cy="395" rx="360" ry="72" fill="#c9a47f" opacity=".35"/>
+    <path d="M145 180h430c-18 190-80 300-215 300S160 370 145 180Z" fill="#fff"/>
+    <path d="M575 220c110 0 125 140 8 168" fill="none" stroke="#fff" stroke-width="44" stroke-linecap="round"/>
+    <path d="M170 205h380c-20 95-78 145-190 145s-170-50-190-145Z" fill="#6f4b2e" opacity=".92"/>
+    <path d="M230 125c-25-45 18-70 0-110M350 125c-25-45 18-70 0-110M470 125c-25-45 18-70 0-110" stroke="#ef7a1a" stroke-width="18" stroke-linecap="round" fill="none" opacity=".55"/>
+  </g>
+  <g opacity=".38" fill="#7b532f">
+    <ellipse cx="180" cy="190" rx="52" ry="28" transform="rotate(-25 180 190)"/>
+    <ellipse cx="255" cy="235" rx="42" ry="24" transform="rotate(18 255 235)"/>
+    <ellipse cx="1370" cy="660" rx="56" ry="30" transform="rotate(22 1370 660)"/>
+    <ellipse cx="1280" cy="730" rx="44" ry="26" transform="rotate(-18 1280 730)"/>
+  </g>
+</svg>
