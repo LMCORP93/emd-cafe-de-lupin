@@ -7,7 +7,7 @@ const legalPageDescription = 'Informations relatives à la confidentialité et a
 const legalPageUrl = new URL(Astro.url.pathname, config.domain).toString();
 ---
 
-<BaseLayout title="Politique de confidentialité | Café aux Champignons" description="Politique de confidentialité de Meilleur Café aux Champignons : données personnelles, cookies, analytics, liens affiliés et droits utilisateur.">
+<BaseLayout title="Politique de confidentialité | Café de Lupin" description="Politique de confidentialité de Café de Lupin : données personnelles, cookies, analytics, liens externes et droits utilisateur.">
 
   <script type="application/ld+json" slot="json-ld" set:html={JSON.stringify({
     '@context': 'https://schema.org',
@@ -76,20 +76,20 @@ const legalPageUrl = new URL(Astro.url.pathname, config.domain).toString();
         <ul>
           <li><strong>Cookies techniques</strong> : nécessaires au fonctionnement du Site</li>
           <li><strong>Cookies de mesure d'audience</strong> : pour comprendre comment les visiteurs utilisent le Site</li>
-          <li><strong>Cookies d'affiliation</strong> : pour tracer les clics sur les liens partenaires</li>
+          <li><strong>Cookies de liens externes</strong> : pour mesurer les clics vers les offres présentées</li>
         </ul>
         <p>Vous pouvez à tout moment modifier vos préférences en matière de cookies via les paramètres de votre navigateur.</p>
 
         <h2 style="font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem); color: #242424; margin-top: 2rem; margin-bottom: 0.75rem;">6. Partage des données</h2>
         <p>Vos données personnelles ne sont jamais vendues à des tiers. Elles peuvent être partagées avec :</p>
         <ul>
-          <li><strong>Partenaires d'affiliation</strong> : les clics sur les liens externes génèrent des données de suivi (sans collecte de données personnelles directes)</li>
+          <li><strong>Sites externes cités</strong> : les clics vers les offres présentées peuvent générer des données de suivi sans collecte de données personnelles directes par le Site</li>
           <li><strong>Prestataires techniques</strong> : hébergeur (Cloudflare), outils d'analyse</li>
           <li><strong>Autorités compétentes</strong> : en cas d'obligation légale</li>
         </ul>
 
         <h2 style="font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem); color: #242424; margin-top: 2rem; margin-bottom: 0.75rem;">7. Durée de conservation</h2>
-        <p>Les données de navigation sont conservées pour une durée maximale de 13 mois. Les données de contact sont conservées pendant la durée nécessaire à la gestion de votre demande, puis supprimées. Les cookies d'affiliation ont une durée de vie variable, généralement comprise entre 30 et 90 jours.</p>
+        <p>Les données de navigation sont conservées pour une durée maximale de 13 mois. Les données de contact sont conservées pendant la durée nécessaire à la gestion de votre demande, puis supprimées. Les cookies liés aux offres externes ont une durée de vie variable, généralement comprise entre 30 et 90 jours.</p>
 
         <h2 style="font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem); color: #242424; margin-top: 2rem; margin-bottom: 0.75rem;">8. Vos droits</h2>
         <p>Conformément au RGPD et à la loi 09-08, vous disposez des droits suivants :</p>

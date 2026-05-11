@@ -1,13 +1,14 @@
 ---
 interface Props {
   faq: { question: string; answer: string }[];
+  title?: string;
 }
 
-const { faq } = Astro.props;
+const { faq, title = 'Questions fréquentes' } = Astro.props;
 ---
 
 <section class="faq-section" id="faq-section">
-  <h2 class="faq-title">Questions fréquentes sur le café aux champignons</h2>
+  <h2 class="faq-title">{title}</h2>
   <div class="faq-list">
     {faq.map((item, index) => (
       <details class="faq-item" open={index === 0}>

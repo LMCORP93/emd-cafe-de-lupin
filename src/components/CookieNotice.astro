@@ -95,7 +95,7 @@ const notice = copy[normalizedLang as keyof typeof copy] ?? copy.fr;
 <style>
   .cookie-notice {
     position: fixed;
-    left: max(1rem, env(safe-area-inset-left));
+    right: max(1rem, env(safe-area-inset-right));
     bottom: max(1rem, env(safe-area-inset-bottom));
     z-index: 40;
     width: min(390px, calc(100vw - 2rem));

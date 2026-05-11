@@ -8,67 +8,35 @@ import FAQSection from '@/components/FAQSection.astro';
 import ContentImage from '@/components/ContentImage.astro';
 import InnerNote from '@/components/InnerNote.astro';
 import ComparisonTable from '@/components/ComparisonTable.astro';
-import ArticleGrid from '@/components/ArticleGrid.astro';
 import EditorialCriteria from '@/components/EditorialCriteria.astro';
-import AuthorBioCard from '@/components/AuthorBioCard.astro';
 import config from '@/data/site.config';
 
 const topProduct = config.products[0];
 
-const relatedArticles = [
-  {
-    title: 'Bonjour Drink avis : test, prix et code promo',
-    excerpt: 'Notre avis sur Bonjour Drink, son goût, sa formule sans caféine, son prix et le code promo LMC20.',
-    image: '/images/content/emd-cafe-champignons-bonjour-packaging.webp',
-    href: '/bonjour-drink-avis/',
-  },
-  {
-    title: 'Café aux champignons danger : faut-il être prudent ?',
-    excerpt: 'Effets secondaires, caféine, interactions, grossesse : les vrais points à vérifier avant de tester.',
-    image: '/images/content/emd-cafe-champignons-ingredients.webp',
-    href: '/cafe-aux-champignons-danger/',
-  },
-  {
-    title: 'Comparatif des meilleurs cafés aux champignons',
-    excerpt: 'Notre classement des meilleures marques de café aux champignons disponibles en France.',
-    image: '/images/content/emd-cafe-champignons-banner.webp',
-    href: '/',
-  },
-];
-
-
 const comparatifFaq = [
   {
-    question: "Qu'est-ce qu'un café aux champignons adaptogènes ?",
-    answer: "Un café aux champignons adaptogènes est une boisson qui combine du café classique (ou un substitut comme l'orge torréfiée) avec des extraits de champignons fonctionnels comme le Lion's Mane, le Cordyceps, le Chaga ou le Reishi. Ces champignons, utilisés depuis des millénaires dans la médecine traditionnelle chinoise, possèdent des propriétés adaptogènes qui aident l'organisme à gérer le stress, améliorent la concentration et offrent une énergie plus stable et durable que le café seul.",
+    question: "Qu'est-ce que le café de lupin ?",
+    answer: "Le café de lupin est une boisson chaude préparée à partir de lupin torréfié. Il ne s'agit pas d'un café au sens botanique, mais d'une alternative au café classique, appréciée pour son goût torréfié et son absence naturelle de caféine.",
   },
   {
-    question: "Le café aux champignons contient-il de la caféine ?",
-    answer: "Cela dépend du produit. Certains cafés aux champignons comme Brainstoorm (Mush N Go) ou Drink Dyna contiennent du café Arabica avec une dose réduite de caféine (80 mg par dose contre 95-120 mg pour un espresso). D'autres alternatives comme Bonjour Drink remplacent totalement le café par de l'orge torréfiée et du cacao, offrant une boisson sans caféine. L'avantage des formulations avec adaptogènes est que l'énergie ressentie est plus douce et sans le crash habituel du café classique.",
+    question: "Le café de lupin contient-il de la caféine ?",
+    answer: "Non, le lupin ne contient naturellement pas de caféine. C'est l'un des principaux intérêts de cette boisson pour les personnes sensibles aux palpitations, au stress, à l'acidité ou aux troubles du sommeil liés au café classique.",
   },
   {
-    question: "Quels sont les bienfaits du café aux champignons ?",
-    answer: "Les bienfaits varient selon les champignons utilisés. Le Lion's Mane stimule la production de NGF (Nerve Growth Factor) pour améliorer la concentration et la mémoire. Le Cordyceps booste l'énergie cellulaire et l'endurance physique. Le Chaga renforce les défenses immunitaires grâce à sa forte teneur en antioxydants. Le Reishi favorise la détente et la résistance au stress. Ensemble, ces champignons procurent une énergie stable, une clarté mentale accrue et une meilleure gestion du stress sans les effets secondaires du café classique.",
+    question: "Quel est le meilleur café de lupin en 2026 ?",
+    answer: "Notre choix principal est Lupi Coffee, car la marque est la plus directement positionnée sur le café de lupin bio. Arsène Boisson est une excellente alternative si vous cherchez une recette plus ronde à base de lupin et pois chiche torréfiés.",
   },
   {
-    question: "Comment choisir le meilleur café aux champignons ?",
-    answer: "Pour choisir un bon café aux champignons, vérifiez plusieurs critères : le dosage total en extraits de champignons (minimum 1500-2000 mg par dose), le ratio d'extraction (un ratio 8:1 ou 12:1 garantit une haute concentration), la certification bio pour éviter les pesticides, la présence de caféine ou non selon votre sensibilité, et la transparence de la marque sur la composition. Les avis clients et les tests indépendants sont également de précieux indicateurs. Le rapport qualité-prix se calcule au coût par tasse, qui varie de 0,60€ à 1,50€ selon les marques.",
+    question: "Quelle différence entre Lupi Coffee et Arsène Boisson ?",
+    answer: "Lupi Coffee vise le café de lupin bio de façon très directe, avec un prix plus accessible après code promo. Arsène Boisson propose une alternative sans caféine plus gourmande, associant lupin et pois chiche torréfiés, mais à un prix plus élevé.",
   },
   {
-    question: "Y a-t-il des contre-indications au café aux champignons ?",
-    answer: "Les champignons adaptogènes sont généralement bien tolérés, mais quelques précautions s'imposent. Les formulations contenant de la caféine sont déconseillées aux enfants, aux femmes enceintes ou allaitantes. Les personnes sous traitement immunosuppresseur devraient éviter le Chaga. En cas de troubles de la coagulation, le Reishi peut interagir avec certains médicaments. Il est toujours recommandé de consulter un médecin avant de commencer une cure de compléments alimentaires, surtout en cas de pathologie préexistante.",
+    question: "Le café de lupin a-t-il le goût du café ?",
+    answer: "Il rappelle davantage le registre torréfié, chaud et réconfortant du café qu'un espresso classique. Le goût est souvent plus doux, végétal et moins amer. Il faut le voir comme une alternative de rituel, pas comme une copie parfaite du café.",
   },
   {
-    question: "Le café aux champignons a-t-il un goût de champignon ?",
-    answer: "La plupart des cafés aux champignons modernes sont formulés pour masquer le goût terreux des champignons. Les marques utilisent du cacao, de l'orge torréfiée ou du café Arabica pour créer un profil aromatique agréable. Brainstoorm (Mush N Go) a un goût cacao-noisette, Bonjour Drink rappelle le café au lait, et Drink Dyna propose des versions cacao et matcha. L'arrière-goût de champignon, quand il est présent, reste très subtil et généralement apprécié après quelques jours d'utilisation.",
-  },
-  {
-    question: "Où acheter du café aux champignons de qualité en France ?",
-    answer: "Les meilleures marques de café aux champignons sont disponibles principalement sur leurs sites officiels pour garantir l'authenticité et la fraîcheur des produits. Les codes promos partenaires (comme LMC15 pour Mush N Go ou LMC20 pour Bonjour Drink) offrent des réductions exclusives directement sur le site de la marque. Certaines références sont aussi disponibles sur des plateformes de compléments alimentaires spécialisés. Nous déconseillons l'achat sur les marketplaces non autorisées où le risque de contrefaçon est élevé.",
-  },
-  {
-    question: "Combien coûte un café aux champignons par jour ?",
-    answer: "Le coût journalier d'un café aux champignons varie selon la marque et le conditionnement. WAKE propose le tarif le plus accessible à environ 0,60€ par tasse. Drink Dyna se situe autour de 0,72€. Bonjour Drink et Mush N Go coûtent environ 1€ par tasse. French Mush et Clearly se situent entre 0,94€ et 1,02€ par tasse. En utilisant les codes promos de nos partenaires, le coût peut être réduit de 10 à 20%, rendant ces boissons très compétitives par rapport à un café de spécialité en cafétière.",
+    question: "Où acheter du café de lupin ?",
+    answer: "Les deux options les plus simples sont les sites officiels des marques. Lupi Coffee propose le code LMC pour une remise de 15 %, et Arsène Boisson propose le code LMC10 pour une remise de 10 %.",
   },
 ];
 
@@ -80,7 +48,7 @@ const productSchema = (p: typeof config.products[number]) => ({
   name: p.name,
   image: toAbsoluteUrl(p.image),
   description: p.description,
-  category: (p as any).productType ?? config.productCategory,
+  category: p.productType ?? config.productCategory,
   brand: { '@type': 'Brand', name: p.brand },
   offers: {
     '@type': 'Offer',
@@ -112,67 +80,37 @@ const productSchema = (p: typeof config.products[number]) => ({
 });
 ---
 
-<BaseLayout
-  title={config.seo.title}
-  description={config.seo.description}
->
-  <!-- JSON-LD: BreadcrumbList -->
+<BaseLayout title={config.seo.title} description={config.seo.description}>
   <script type="application/ld+json" slot="json-ld" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": config.domain,
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Comparatif",
-        "item": config.domain,
-      },
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: config.domain },
+      { '@type': 'ListItem', position: 2, name: 'Comparatif café de lupin', item: config.domain },
     ],
   })} />
 
-  <!-- JSON-LD: ItemList -->
   <script type="application/ld+json" slot="json-ld" set:html={JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    itemListElement: config.products.map((p, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: productSchema(p),
-    })),
+    itemListElement: config.products.map((p, i) => ({ '@type': 'ListItem', position: i + 1, item: productSchema(p) })),
   })} />
 
-  <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json" slot="json-ld" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": comparatifFaq.map((item) => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer,
-      },
-    })),
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: comparatifFaq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })),
   })} />
 
-  <!-- Blog Hero -->
   <BlogHero
-    title="Meilleur café aux champignons : comparatif 2026"
-    description="Notre sélection 2026 des meilleurs cafés aux champignons en France, classés selon la formule, le goût, le prix et la crédibilité des marques."
+    title="Meilleur café de lupin : comparatif 2026"
+    description="Lupi Coffee ou Arsène Boisson ? Voici notre comparatif clair des meilleures marques françaises de café de lupin pour remplacer le café sans caféine."
     author={config.author.name}
     authorAvatar={config.author.avatar}
-    date="23 Avril 2026"
-    readingTime="12 min de lecture"
-    breadcrumbs={[
-      { label: 'Comparatif café aux champignons', href: '/' },
-    ]}
-    bannerImage="/images/content/emd-cafe-champignons-banner.webp"
+    date="11 Mai 2026"
+    readingTime="9 min de lecture"
+    breadcrumbs={[{ label: 'Comparatif café de lupin', href: '/' }]}
+    bannerImage="/images/content/cafe-de-lupin-hero.webp"
     product={{
       name: topProduct.name,
       image: topProduct.image,
@@ -182,165 +120,88 @@ const productSchema = (p: typeof config.products[number]) => ({
       discountPrice: topProduct.discountPrice,
       affiliateLink: topProduct.affiliateLink,
     }}
-    heroButton={{
-      text: 'Voir le comparatif',
-      href: `#product-${topProduct.slug}`,
-    }}
+    heroButton={{ text: 'Voir le comparatif', href: `#product-${topProduct.slug}` }}
     showOfferBlock={false}
+    showMeta={false}
   />
 
   <main style="background-color: #ffffff;">
     <div class="container-large padding-global">
       <div class="padding-section-medium">
         <div class="blog-grid">
-
-          <!-- ═══ LEFT COLUMN (content) ═══ -->
           <div class="content-column">
-
-            <!-- Intro -->
-            <section id="introduction" class="mb-8">
-              <div class="rich-text">
-                <h2>Notre comparatif des meilleurs cafés aux champignons</h2>
-                <p>
-                  Le café aux champignons connaît une croissance fulgurante en France. Avec <strong>720 recherches mensuelles</strong> pour « café aux champignons » et <strong>880 pour « café adaptogène »</strong>, ce marché en plein essor attire de plus en plus de consommateurs en quête d'une alternative saine au café classique.
-                </p>
-                <p>
-                  Mais face à la multiplication des offres, du café Arabica enrichi en Lion's Mane aux alternatives sans caféine à base d'orge torréfiée, il devient difficile de s'y retrouver. Notre équipe a testé et analysé les <strong>6 meilleures marques de café aux champignons disponibles en France</strong> pour vous aider à faire le bon choix.
-                </p>
-                <p>
-                  Chaque produit a été évalué selon des critères stricts : <strong>dosage en extraits de champignons</strong>, qualité de l'extraction, profil nutritionnel, goût, rapport qualité-prix et retours clients. Voici le classement que nous retiendrions aujourd’hui pour choisir un café aux champignons crédible, agréable à utiliser et pertinent pour le marché français.
-                </p>
-              </div>
+            <section id="introduction" class="rich-text intro-section">
+              <h2>Notre comparatif des cafés de lupin</h2>
+              <p>Le café de lupin répond à une demande très simple : garder le rituel du café, sans caféine, sans nervosité et avec une boisson plus douce pour le quotidien. En France, l’intérêt SEO est réel avec environ <strong>1 600 recherches mensuelles</strong> sur « café de lupin », et l’offre commence seulement à se structurer.</p>
+              <p>Ce comparatif met en avant deux marques françaises particulièrement pertinentes : <strong>Lupi Coffee</strong> et <strong>Arsène Boisson</strong>. Ce ne sont pas des produits identiques. Lupi Coffee est le choix le plus direct, centré sur le café de lupin bio. Arsène Boisson propose une alternative plus gourmande, avec lupin et pois chiche torréfiés.</p>
+              <p>Notre recommandation est donc claire : <strong>Lupi Coffee en numéro 1</strong> si vous voulez découvrir le café de lupin dans sa forme la plus directe, et <strong>Arsène Boisson en numéro 2</strong> si vous cherchez une boisson chaude sans caféine avec un profil plus rond.</p>
             </section>
 
-            <ContentImage
-              src="/images/content/emd-cafe-champignons-lifestyle.webp"
-              alt="Routine matinale premium autour d'un café aux champignons pour la concentration et l'énergie stable"
-              caption="Le café aux champignons séduit surtout pour sa promesse d'énergie plus stable, de meilleure concentration et d'un rituel matinal plus doux qu'un café classique."
-            />
+            <TableOfContents items={config.tocItems} />
 
-            <!-- Sommaire -->
-            <section id="methodologie-classement" class="methodology-box">
-              <h2>Comment nous avons classé les produits</h2>
-              <p>Notre classement combine des critères éditoriaux et pratiques pour aider à choisir une formule adaptée, sans se limiter au prix ou au niveau de réduction.</p>
-              <ul>
-                  <li>Formulation et dosage des actifs</li>
-                  <li>Prix réel après réduction et coût par usage</li>
-                  <li>Disponibilité et facilité de commande</li>
-                  <li>Avis clients et signaux de confiance publics</li>
-                  <li>Transparence de la marque sur la composition</li>
-                  <li>Code promo, conditions et clarté de l’offre</li>
-                  <li>Adéquation au besoin principal de la page</li>
-              </ul>
-              <p class="methodology-box__disclaimer"><strong>Note éditoriale.</strong> Notre classement privilégie la cohérence de la formule, la clarté de l’offre et l’adéquation avec l’usage recherché, sans se limiter au prix ou aux promesses marketing.</p>
-            </section>
-
-            <TableOfContents items={[
-              { id: 'introduction', label: 'Introduction' },
-              { id: 'methodologie-classement', label: 'Méthode' },
-              ...config.products.map((p) => ({
-                id: `product-${p.slug}`,
-                label: `${p.rank <= 3 ? (p.rank === 1 ? '🏆' : p.rank === 2 ? '🥈' : '🥉') : ''} ${p.rank}. ${p.brand}`,
-              })),
-              { id: 'guide', label: 'Guide d\'achat' },
-              { id: 'faq', label: 'Questions fréquentes' },
-            ]} />
-
-            <!-- Comparator Cards -->
-            <section id="comparatif-section" class="comparatif-cards">
+            <section id="ranking" class="comparatif-cards">
               {config.products.map((product) => (
-                <div id={`product-${product.slug}`}>
-                  <ComparatorCard product={product} />
-                </div>
+                <div id={`product-${product.slug}`}><ComparatorCard product={product} /></div>
               ))}
             </section>
 
-            <!-- ═══ SEO TEXT: Guide d'achat ═══ -->
-            <section id="guide" class="seo-guide">
-              <div class="rich-text">
-                <h2>Comment choisir le meilleur café aux champignons adaptogènes ?</h2>
-
-                <h3>Pourquoi remplacer votre café classique ?</h3>
-                <p>
-                  Le café classique, consommé par 83% des Français au quotidien, présente des effets indésirables bien documentés : palpitations, insomnie, acidité gastrique, nervosité et surtout le fameux « crash » de l'après-midi. Les <strong>champignons adaptogènes</strong> offrent une réponse naturelle à ces problématiques en modulant la réponse de l'organisme au stress et en procurant une énergie stable et durable.
-                </p>
-                <p>
-                  La médecine traditionnelle chinoise utilise ces champignons depuis plus de 2000 ans. La science moderne confirme aujourd'hui leurs propriétés : le <strong>Lion's Mane</strong> stimule la production de facteur de croissance nerveuse (NGF), le <strong>Cordyceps</strong> améliore la production d'ATP cellulaire, le <strong>Chaga</strong> possède l'un des indices ORAC les plus élevés de la nature, et le <strong>Reishi</strong> est reconnu pour ses effets immunomodulateurs et relaxants.
-                </p>
-
-                <h3>Les critères essentiels pour bien choisir</h3>
-
-                <p><strong>1. Le dosage en extraits de champignons</strong><br>
-                C'est le critère numéro un. Un bon café aux champignons doit contenir entre <strong>1 500 et 3 500 mg d'extraits par dose</strong>. Méfiez-vous des produits qui affichent des dosages en poudre brute : les extraits concentrés (ratio 8:1 à 12:1) sont beaucoup plus efficaces car ils concentrent les composés actifs. Brainstoorm de Mush N Go détient le record avec 3 475 mg par dose, suivi de Bonjour Drink avec 2 250 mg et Drink Dyna avec 2 000 mg.</p>
-
-                <p><strong>2. La qualité de l'extraction</strong><br>
-                Le ratio d'extraction indique la concentration. Un ratio <strong>8:1</strong> signifie que 8 kg de champignons frais sont concentrés en 1 kg d'extrait. Plus le ratio est élevé, plus la concentration en bêta-glucanes, hericénones et triterpènes est importante. Privilégiez les extractions aqueuses ou double (eau + alcool) qui préservent le spectre complet des composés actifs.</p>
-
-                <p><strong>3. La teneur en caféine</strong><br>
-                Selon votre sensibilité, le choix entre un café aux champignons avec ou sans caféine est déterminant. Si vous cherchez une expérience proche du café classique avec un effet stimulant modéré, optez pour des formulations à base d'Arabica comme Brainstoorm ou Drink Dyna. Si vous souhaitez éliminer totalement la caféine tout en gardant le rituel du café matinal, Bonjour Drink (orge torréfiée + cacao) ou Clearly sont d'excellentes alternatives.</p>
-
-                <p><strong>4. Les certifications et la transparence</strong><br>
-                Exigez une <strong>certification bio</strong> pour garantir l'absence de pesticides. Vérifiez que la marque indique clairement la provenance de ses champignons (cultivés en France, en Europe ou en Asie avec traçabilité). Les analyses laboratoires tierces et la transparence sur la composition sont des signes de qualité. Mush N Go, French Mush et Clearly se distinguent sur ces critères.</p>
-
-                <p><strong>5. Le rapport qualité-prix</strong><br>
-                Calculez le <strong>coût par tasse</strong>, pas le prix du sachet. WAKE propose le tarif le plus accessible à 0,60€/tasse, suivi de Drink Dyna à 0,72€ et de Bonjour Drink et Mush N Go à environ 1€/tasse. N'oubliez pas d'utiliser les codes promos partenaires (LMC15, LMC20, etc.) qui peuvent réduire le coût de 10 à 20%. Les conditionnements de 60 ou 90 portions offrent généralement un meilleur rapport qualité-prix.</p>
-
-                <InnerNote
-                  emoji="📌"
-                  text="<strong>Notre méthode :</strong> nous ne classons pas seulement les produits selon la note. Nous croisons le dosage, la caféine, le goût, le prix par tasse, la transparence et la facilité d’utilisation au quotidien."
-                />
-
-                <ComparisonTable
-                  title="Critères de comparaison utilisés"
-                  headers={[
-                    { label: 'Critère' },
-                    { label: 'Pourquoi ça compte' },
-                  ]}
-                  rows={[
-                    { cells: ['Caféine', 'Détermine la tolérance et le sommeil'], highlight: true },
-                    { cells: ['Dosage', 'Permet de comparer la concentration réelle'] },
-                    { cells: ['Goût', 'Conditionne l’usage quotidien'], highlight: true },
-                    { cells: ['Prix par tasse', 'Plus fiable que le prix du sachet'] },
-                    { cells: ['Transparence', 'Réduit le risque de promesses floues'], highlight: true },
-                  ]}
-                />
-
-                <ContentImage
-                  src="/images/content/emd-cafe-champignons-ingredients.webp"
-                  alt="Lion's Mane, Reishi, Cordyceps et Chaga disposés autour d'une tasse chaude dans une ambiance éditoriale premium"
-                  caption="Sur cette niche, l'image éditoriale doit surtout traduire l'univers matière : lion's mane, reishi, chaga, cordyceps, cacao et rituel chaud."
-                />
-
-                <h3>Les différents types de cafés aux champignons</h3>
-                <p><strong>Café Arabica + champignons :</strong> La formule la plus courante. Elle combine le goût et la caffeine du café avec les bienfaits des adaptogènes. Brainstoorm, Drink Dyna et WAKE utilisent cette approche. Idéal pour ceux qui veulent garder le rituel du café tout en réduisant les effets secondaires.</p>
-                <p><strong>Substitut sans caféine :</strong> Utilise de l'orge torréfiée, du cacao ou du matcha comme base au lieu du café. Bonjour Drink et Clearly adoptent cette approche. Parfait pour les personnes sensibles à la caféine ou cherchant à la supprimer totalement.</p>
-                <p><strong>Poudre fonctionnelle :</strong> Concentré de champignons à mélanger dans votre boisson. French Mush propose cette approche avec ses poudres et gélules ultra-concentrées. Offre une flexibilité maximale d'utilisation.</p>
-
-                <h3>Notre verdict</h3>
-                <p>
-                  Après avoir testé les 6 meilleures marques du marché français, notre podium se dessine clairement. <strong>Bonjour Drink</strong> et <strong>Mush N Go</strong> dominent avec leur note de 9,7/10 : le premier pour son accessibilité et son approche sans caféine, le second pour sa concentration record en extraits. <strong>WAKE</strong> prend la 3ᵉ place grâce à son prix très accessible et son approche arabica + orge + champignons. <strong>Drink Dyna</strong> passe en 4ᵉ position : sa formule reste solide, mais son rapport prix/dosage est moins évident face au podium. Que vous cherchiez une alternative sans caféine, un produit très dosé ou le meilleur compromis prix/efficacité, ce comparatif couvre les profils les plus pertinents du marché français.
-                </p>
-              </div>
+            <section id="methodologie" class="rich-text seo-guide">
+              <h2>Comment nous avons classé les marques</h2>
+              <p>Le classement ne repose pas uniquement sur la note globale de la marque. Pour une recherche centrée sur le café de lupin, le premier critère est la pertinence avec l’intention du lecteur. Une personne qui tape « café de lupin » ne cherche pas forcément une boisson fonctionnelle large : elle veut comprendre quelle marque choisir, quel goût attendre, combien cela coûte et si la boisson peut vraiment remplacer le café.</p>
+              <p>Nous avons donc donné plus de poids à la spécialisation café de lupin, à la clarté de l’offre, au prix après code promo, à la disponibilité en France, aux avis publics, à la simplicité du lien d’achat et au positionnement sans caféine. C’est ce qui explique le choix de Lupi Coffee en première position, même si Arsène Boisson possède une très bonne note interne.</p>
+              <p>Le deuxième critère est l’utilité au moment de choisir. Les deux marques ont un code promo clair, une offre compréhensible et une page d’achat directe. C’est exactement le type de comparatif utile pour le lecteur : court à comprendre, concret pour choisir, et suffisamment précis pour ne pas devenir un article généraliste sur les alternatives au café.</p>
             </section>
 
-            <!-- ═══ FAQ ═══ -->
-            <section id="faq" class="faq-section">
-              <FAQSection faq={comparatifFaq} />
+            <ContentImage
+              src="/images/content/cafe-de-lupin-comparatif.svg"
+              alt="Comparatif café de lupin entre Lupi Coffee et Arsène Boisson"
+              caption="Pour choisir, le point clé n’est pas seulement le prix : il faut comparer le type de recette, le goût attendu, la présence de caféine, la remise disponible et la facilité d’achat."
+            />
+
+            <section id="choisir" class="rich-text seo-guide">
+              <h2>Comment choisir son café de lupin ?</h2>
+              <h3>Choisissez Lupi Coffee si vous voulez le choix le plus direct</h3>
+              <p>Lupi Coffee est le choix logique si votre recherche est vraiment « café de lupin ». La marque est simple à comprendre : une alternative au café à base de lupin bio, sans caféine, pensée pour le rituel du matin. C’est aussi l’option la plus accessible en prix dans notre comparatif, avec un prix affiché à 19,00 € et 17,10 € après le code LMC.</p>
+              <p>Ce positionnement direct est important pour un premier achat. Quand une catégorie est encore nouvelle, mieux vaut souvent commencer par la marque la plus lisible plutôt que par l’option la plus complexe. Lupi Coffee coche cette case : promesse claire, produit central facile à identifier, remise propre, et cohérence forte avec la requête SEO.</p>
+              <h3>Choisissez Arsène Boisson si vous voulez une alternative plus gourmande</h3>
+              <p>Arsène Boisson devient plus intéressante si vous ne cherchez pas seulement du lupin, mais une boisson chaude sans caféine avec une vraie rondeur gustative. La présence de pois chiche torréfié peut donner un profil plus travaillé et moins monolithique. C’est une bonne option pour les personnes qui veulent remplacer le café sans avoir l’impression de boire une simple infusion céréalière.</p>
+              <p>Le revers, c’est le prix. À 22,86 € après code LMC10, Arsène Boisson est plus chère que Lupi Coffee. Elle reste pertinente, mais plutôt comme alternative premium ou deuxième test après une première découverte du café de lupin.</p>
             </section>
 
-            <AuthorBioCard />
+            <InnerNote emoji="📌" text="Notre lecture : Lupi Coffee est le meilleur point d’entrée sur le café de lupin. Arsène Boisson est la meilleure alternative si vous cherchez un goût plus rond et une recette plus travaillée." />
+
+            <ComparisonTable title="Quel café de lupin choisir ?" headers={[{ label: 'Besoin' }, { label: 'Meilleur choix' }]} rows={[
+              { cells: ['Découvrir le café de lupin sans se compliquer', '<a class="table-link" href="https://www.lupicoffee.com/products/cafe-de-lupin-bio-boite-de-decouverte?ref=LMC" target="_blank" rel="nofollow sponsored">✅ Lupi Coffee</a>'], highlight: true },
+              { cells: ['Payer le prix le plus accessible après remise', '<a class="table-link" href="https://www.lupicoffee.com/products/cafe-de-lupin-bio-boite-de-decouverte?ref=LMC" target="_blank" rel="nofollow sponsored">✅ Lupi Coffee</a>'], highlight: true },
+              { cells: ['Tester une boisson torréfiée plus gourmande', '<a class="table-link" href="https://arseneboissons.fr/LMC10" target="_blank" rel="nofollow sponsored">✅ Arsène Boisson</a>'] },
+              { cells: ['Remplacer le café sans caféine', '✅ Les deux marques conviennent'] },
+            ]} />
+
+            <section id="prix" class="rich-text seo-guide">
+              <h2>Prix et codes promo</h2>
+              <p>Côté prix, <strong>Lupi Coffee</strong> part avec un avantage net : 19,00 € avant remise, puis <strong>17,10 € avec le code LMC</strong>. Pour une catégorie encore émergente, ce prix d’entrée est rassurant. Il permet de tester le café de lupin sans engager un panier trop élevé.</p>
+              <p><strong>Arsène Boisson</strong> est plus chère : 25,40 € avant remise, puis <strong>22,86 € avec le code LMC10</strong>. Le produit reste intéressant, mais il se place davantage comme une alternative premium. Le choix dépendra donc de votre priorité : tester le lupin au meilleur prix, ou chercher une recette plus gourmande.</p>
+              <p>Dans les deux cas, nous recommandons d’acheter via les sites officiels. C’est plus simple pour appliquer les codes promo, vérifier la fraîcheur de l’offre et éviter les fiches marketplace incomplètes.</p>
+            </section>
 
             <EditorialCriteria />
 
+            <section id="verdict" class="rich-text seo-guide">
+              <h2>Verdict final</h2>
+              <p><strong>Lupi Coffee est notre recommandation numéro 1</strong> pour un comparatif café de lupin. C’est le choix le plus direct, le plus lisible et le plus aligné avec l’intention de recherche. Si vous voulez remplacer le café par une boisson sans caféine à base de lupin, c’est le meilleur point de départ.</p>
+              <p><strong>Arsène Boisson mérite clairement sa place en deuxième position</strong>. La marque est crédible, française, bien positionnée et intéressante pour les personnes qui veulent une alternative plus ronde. Elle passe derrière surtout à cause du prix et d’un positionnement un peu moins exact sur le café de lupin pur.</p>
+              <p>Notre conseil simple : commencez par Lupi Coffee si vous découvrez la catégorie. Gardez Arsène Boisson comme alternative si vous voulez comparer le goût ou si vous cherchez une boisson chaude sans caféine plus travaillée.</p>
+            </section>
+
+            <section id="faq" class="faq-section"><FAQSection faq={comparatifFaq} title="Questions fréquentes" /></section>
           </div>
 
-          <!-- ═══ RIGHT COLUMN (sidebar) ═══ -->
-          <div class="sidebar-column">
+          <aside class="sidebar-column">
             <div class="sidebar-sticky">
               <SidebarCTA
                 logoSrc={topProduct.brandLogo}
-              productName={topProduct.name}
-              brandName={topProduct.brand}
+                productName={topProduct.name}
+                brandName={topProduct.brand}
                 promoCode={topProduct.promoCode}
                 promoPercent={topProduct.promoPercent}
                 originalPrice={topProduct.originalPrice}
@@ -351,60 +212,17 @@ const productSchema = (p: typeof config.products[number]) => ({
                 reviewCount={topProduct.reviewCount}
               />
             </div>
-          </div>
-
+          </aside>
         </div>
       </div>
     </div>
   </main>
-
-  <ArticleGrid articles={ relatedArticles.filter((article) => article.href !== '/') } />
 </BaseLayout>
 
 <style>
-  .comparatif-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .seo-guide {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid #f0ebe3;
-  }
-
-  .seo-guide .rich-text h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #242424;
-  }
-
-  .seo-guide .rich-text h3:first-of-type {
-    margin-top: 2.5rem;
-  }
-
-  .seo-guide .rich-text p {
-    margin-bottom: 1rem;
-    line-height: 1.8;
-    color: #444;
-  }
-
-  .faq-section {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid #f0ebe3;
-  }
-
-.methodology-box { margin: 2rem 0; padding: 1.35rem; border: 1px solid #eadfce; border-radius: 18px; background: #f8f4ec; color: #2f2922; }
-.methodology-box, .methodology-box h2, .methodology-box p, .methodology-box li, .methodology-box strong { color: #2f2922; }
-.methodology-box h2 { margin: 0 0 .75rem; font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.15; }
-.methodology-box p { margin: 0 0 .9rem; line-height: 1.65; }
-.methodology-box ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem 1rem; margin: .8rem 0 1rem; padding-left: 1.1rem; }
-.methodology-box li { line-height: 1.45; }
-.methodology-box__disclaimer { margin-top: .85rem !important; padding-top: .85rem; border-top: 1px solid #eadfce; font-size: .92rem; }
-@media (max-width: 768px) { .methodology-box ul { grid-template-columns: 1fr; } .methodology-box { padding: 1rem; } }
-
+  .intro-section { margin-bottom: 1.5rem; }
+  .seo-guide { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #f0ebe3; }
+  .seo-guide .rich-text h3, .seo-guide h3 { margin-top: 2rem; margin-bottom: .75rem; font-size: 1.25rem; font-weight: 600; color: #242424; }
+  .seo-guide p { margin-bottom: 1rem; line-height: 1.8; color: #444; }
+  .faq-section { margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #f0ebe3; }
 </style>
