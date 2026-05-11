@@ -177,8 +177,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/avis-lupi-coffee-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/avis-lupi-coffee-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/avis-lupi-coffee-inline-b-v2-natural.webp",
+    "imageCaption2": "Un avis fiable compare le goût, la tolérance et la facilité à intégrer le café de lupin dans une vraie routine."
   },
   {
     "slug": "avis-arsene-boisson",
@@ -358,8 +360,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/avis-arsene-boisson-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/avis-arsene-boisson-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/avis-arsene-boisson-inline-b-v2-natural.webp",
+    "imageCaption2": "La dégustation aide à comprendre si une alternative au café répond vraiment aux attentes du quotidien."
   },
   {
     "slug": "cafe-de-lupin-danger",
@@ -539,8 +543,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/cafe-de-lupin-danger-inline-natural.webp",
-    "imageCaption": "Une boisson au lupin se teste progressivement, surtout en cas de terrain allergique ou digestif sensible."
+    "inlineImage": "/images/content/cafe-de-lupin-danger-inline-a-v2-natural.webp",
+    "imageCaption": "Une boisson au lupin se teste progressivement, surtout en cas de terrain allergique ou digestif sensible.",
+    "inlineImage2": "/images/content/cafe-de-lupin-danger-inline-b-v2-natural.webp",
+    "imageCaption2": "Les précautions autour du lupin concernent surtout les allergies et la tolérance individuelle."
   },
   {
     "slug": "cafe-de-lupin-bienfaits",
@@ -720,8 +726,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/cafe-de-lupin-bienfaits-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/cafe-de-lupin-bienfaits-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/cafe-de-lupin-bienfaits-inline-b-v2-natural.webp",
+    "imageCaption2": "Le principal intérêt du café de lupin reste le rituel chaud, sans caféine, avec une boisson plus douce."
   },
   {
     "slug": "cafe-de-lupin-vs-cafe",
@@ -901,8 +909,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/cafe-de-lupin-vs-cafe-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/cafe-de-lupin-vs-cafe-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/cafe-de-lupin-vs-cafe-inline-b-v2-natural.webp",
+    "imageCaption2": "Comparer le café classique et le lupin permet de choisir selon le goût, la caféine et la digestion."
   },
   {
     "slug": "alternative-au-cafe-sans-cafeine",
@@ -1082,8 +1092,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/alternative-au-cafe-sans-cafeine-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/alternative-au-cafe-sans-cafeine-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/alternative-au-cafe-sans-cafeine-inline-b-v2-natural.webp",
+    "imageCaption2": "Une bonne alternative sans caféine doit soutenir le rituel sans créer de nervosité."
   },
   {
     "slug": "cafe-de-lupin-instantane",
@@ -1263,8 +1275,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/cafe-de-lupin-instantane-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/cafe-de-lupin-instantane-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/cafe-de-lupin-instantane-inline-b-v2-natural.webp",
+    "imageCaption2": "Le format instantané mise surtout sur la simplicité de préparation et la régularité d’usage."
   },
   {
     "slug": "cafe-de-lupin-recette",
@@ -1444,8 +1458,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/cafe-de-lupin-recette-inline-natural.webp",
-    "imageCaption": "Le dosage, la température et l’ajout de lait végétal changent beaucoup la perception du café de lupin."
+    "inlineImage": "/images/content/cafe-de-lupin-recette-inline-a-v2-natural.webp",
+    "imageCaption": "Le dosage, la température et l’ajout de lait végétal changent beaucoup la perception du café de lupin.",
+    "inlineImage2": "/images/content/cafe-de-lupin-recette-inline-b-v2-natural.webp",
+    "imageCaption2": "La recette compte autant que la marque : dosage, lait végétal et épices changent beaucoup le résultat."
   },
   {
     "slug": "farine-de-lupin-bienfaits",
@@ -1625,8 +1641,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/farine-de-lupin-bienfaits-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/farine-de-lupin-bienfaits-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/farine-de-lupin-bienfaits-inline-b-v2-natural.webp",
+    "imageCaption2": "La farine de lupin se juge sur son usage culinaire, son apport protéique et sa tolérance digestive."
   },
   {
     "slug": "graines-de-lupin-bienfaits",
@@ -1806,8 +1824,10 @@ export const articlePages = [
         "Les deux options"
       ]
     ],
-    "inlineImage": "/images/content/graines-de-lupin-bienfaits-inline-natural.webp",
-    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+    "inlineImage": "/images/content/graines-de-lupin-bienfaits-inline-a-v2-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien.",
+    "inlineImage2": "/images/content/graines-de-lupin-bienfaits-inline-b-v2-natural.webp",
+    "imageCaption2": "Les graines de lupin restent l’ingrédient de base, mais leur préparation influence fortement le confort digestif."
   },
   {
     "slug": "code-promo-lupi-coffee",
@@ -1820,7 +1840,7 @@ export const articlePages = [
     "angle": "aider à utiliser le code LMC sans perdre la remise",
     "product": 0,
     "heroImage": "/images/content/code-promo-lupi-coffee-natural.webp",
-    "inlineImage": "/images/content/code-promo-lupi-coffee-inline-natural.webp",
+    "inlineImage": "/images/content/code-promo-lupi-coffee-inline-a-v2-natural.webp",
     "imageCaption": "Le bon réflexe : copier le code, passer par le site officiel, puis vérifier la remise dans le panier avant paiement.",
     "readingTime": "8 min de lecture",
     "toc": [
@@ -1943,7 +1963,9 @@ export const articlePages = [
         "À vérifier",
         "Panier final et frais de livraison"
       ]
-    ]
+    ],
+    "inlineImage2": "/images/content/code-promo-lupi-coffee-inline-b-v2-natural.webp",
+    "imageCaption2": "Le code promo sert surtout à tester Lupi Coffee avec un premier achat plus accessible."
   },
   {
     "slug": "code-promo-arsene-boisson",
@@ -1956,7 +1978,7 @@ export const articlePages = [
     "angle": "aider à utiliser le code LMC10 et comprendre le prix final",
     "product": 1,
     "heroImage": "/images/content/code-promo-arsene-boisson-natural.webp",
-    "inlineImage": "/images/content/code-promo-arsene-boisson-inline-natural.webp",
+    "inlineImage": "/images/content/code-promo-arsene-boisson-inline-a-v2-natural.webp",
     "imageCaption": "Le bon réflexe : copier le code, passer par le site officiel, puis vérifier la remise dans le panier avant paiement.",
     "readingTime": "8 min de lecture",
     "toc": [
@@ -2079,8 +2101,8 @@ export const articlePages = [
         "À vérifier",
         "Panier final et frais de livraison"
       ]
-    ]
+    ],
+    "inlineImage2": "/images/content/code-promo-arsene-boisson-inline-b-v2-natural.webp",
+    "imageCaption2": "Un bon code promo doit rester simple à utiliser et clairement lié à l’offre partenaire."
   }
 ] as const;
-
-export type ArticlePage = typeof articlePages[number];
