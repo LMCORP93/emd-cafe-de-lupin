@@ -9,7 +9,7 @@ export const articlePages = [
     "intent": "avis avant achat",
     "angle": "évaluer si Lupi Coffee est le meilleur point d’entrée pour découvrir le café de lupin bio",
     "product": 0,
-    "heroImage": "/images/content/avis-lupi-coffee.svg",
+    "heroImage": "/images/content/avis-lupi-coffee-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -176,7 +176,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/avis-lupi-coffee-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
   },
   {
     "slug": "avis-arsene-boisson",
@@ -188,7 +190,7 @@ export const articlePages = [
     "intent": "avis avant achat",
     "angle": "comprendre si Arsène Boisson vaut son prix face à Lupi Coffee",
     "product": 1,
-    "heroImage": "/images/content/avis-arsene-boisson.svg",
+    "heroImage": "/images/content/avis-arsene-boisson-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -355,7 +357,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/avis-arsene-boisson-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
   },
   {
     "slug": "cafe-de-lupin-danger",
@@ -367,7 +371,7 @@ export const articlePages = [
     "intent": "réassurance sécurité",
     "angle": "répondre aux inquiétudes sans dramatiser ni faire de promesse médicale",
     "product": 0,
-    "heroImage": "/images/content/cafe-de-lupin-danger.svg",
+    "heroImage": "/images/content/cafe-de-lupin-danger-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -534,7 +538,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/cafe-de-lupin-danger-inline-natural.webp",
+    "imageCaption": "Une boisson au lupin se teste progressivement, surtout en cas de terrain allergique ou digestif sensible."
   },
   {
     "slug": "cafe-de-lupin-bienfaits",
@@ -546,7 +552,7 @@ export const articlePages = [
     "intent": "bénéfices",
     "angle": "expliquer les vrais avantages sans surpromesse santé",
     "product": 0,
-    "heroImage": "/images/content/cafe-de-lupin-bienfaits.svg",
+    "heroImage": "/images/content/cafe-de-lupin-bienfaits-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -713,7 +719,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/cafe-de-lupin-bienfaits-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
   },
   {
     "slug": "cafe-de-lupin-vs-cafe",
@@ -725,7 +733,7 @@ export const articlePages = [
     "intent": "comparaison",
     "angle": "aider à savoir si le lupin peut remplacer le café quotidien",
     "product": 0,
-    "heroImage": "/images/content/cafe-de-lupin-vs-cafe.svg",
+    "heroImage": "/images/content/cafe-de-lupin-vs-cafe-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -892,7 +900,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/cafe-de-lupin-vs-cafe-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
   },
   {
     "slug": "alternative-au-cafe-sans-cafeine",
@@ -904,7 +914,7 @@ export const articlePages = [
     "intent": "découverte",
     "angle": "capter les lecteurs qui ne connaissent pas encore le café de lupin",
     "product": 0,
-    "heroImage": "/images/content/alternative-au-cafe-sans-cafeine.svg",
+    "heroImage": "/images/content/alternative-au-cafe-sans-cafeine-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -1071,7 +1081,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/alternative-au-cafe-sans-cafeine-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
   },
   {
     "slug": "cafe-de-lupin-instantane",
@@ -1083,7 +1095,7 @@ export const articlePages = [
     "intent": "format pratique",
     "angle": "expliquer les formats solubles, moulus ou à infuser sans confondre les offres",
     "product": 0,
-    "heroImage": "/images/content/cafe-de-lupin-instantane.svg",
+    "heroImage": "/images/content/cafe-de-lupin-instantane-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -1250,7 +1262,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/cafe-de-lupin-instantane-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
   },
   {
     "slug": "cafe-de-lupin-recette",
@@ -1262,7 +1276,7 @@ export const articlePages = [
     "intent": "préparation",
     "angle": "donner des conseils d’usage concrets pour améliorer le goût",
     "product": 0,
-    "heroImage": "/images/content/cafe-de-lupin-recette.svg",
+    "heroImage": "/images/content/cafe-de-lupin-recette-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -1429,7 +1443,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/cafe-de-lupin-recette-inline-natural.webp",
+    "imageCaption": "Le dosage, la température et l’ajout de lait végétal changent beaucoup la perception du café de lupin."
   },
   {
     "slug": "farine-de-lupin-bienfaits",
@@ -1441,7 +1457,7 @@ export const articlePages = [
     "intent": "extension lupin alimentaire",
     "angle": "élargir le cluster lupin sans perdre le lien avec la boisson",
     "product": 0,
-    "heroImage": "/images/content/farine-de-lupin-bienfaits.svg",
+    "heroImage": "/images/content/farine-de-lupin-bienfaits-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -1608,7 +1624,9 @@ export const articlePages = [
         "Sans caféine",
         "Les deux options"
       ]
-    ]
+    ],
+    "inlineImage": "/images/content/farine-de-lupin-bienfaits-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
   },
   {
     "slug": "graines-de-lupin-bienfaits",
@@ -1620,7 +1638,7 @@ export const articlePages = [
     "intent": "extension lupin alimentaire",
     "angle": "expliquer le lupin alimentaire et ramener vers la version torréfiée",
     "product": 0,
-    "heroImage": "/images/content/graines-de-lupin-bienfaits.svg",
+    "heroImage": "/images/content/graines-de-lupin-bienfaits-natural.webp",
     "readingTime": "11 min de lecture",
     "toc": [
       {
@@ -1786,6 +1804,280 @@ export const articlePages = [
       [
         "Sans caféine",
         "Les deux options"
+      ]
+    ],
+    "inlineImage": "/images/content/graines-de-lupin-bienfaits-inline-natural.webp",
+    "imageCaption": "Le café de lupin se juge comme un rituel chaud naturel : goût, tolérance et facilité d’usage au quotidien."
+  },
+  {
+    "slug": "code-promo-lupi-coffee",
+    "label": "Code promo Lupi",
+    "title": "Code promo Lupi Coffee : LMC -15% sur le café de lupin",
+    "meta": "Code promo Lupi Coffee : utilisez LMC pour obtenir -15% sur le café de lupin bio. Prix, conditions et avis avant achat.",
+    "h1": "Code promo Lupi Coffee : -15% avec le code LMC sur le café de lupin bio",
+    "focus": "Lupi Coffee",
+    "intent": "code promo avant achat",
+    "angle": "aider à utiliser le code LMC sans perdre la remise",
+    "product": 0,
+    "heroImage": "/images/content/code-promo-lupi-coffee-natural.webp",
+    "inlineImage": "/images/content/code-promo-lupi-coffee-inline-natural.webp",
+    "imageCaption": "Le bon réflexe : copier le code, passer par le site officiel, puis vérifier la remise dans le panier avant paiement.",
+    "readingTime": "8 min de lecture",
+    "toc": [
+      {
+        "id": "code-promo-actuel",
+        "label": "Code promo actuel"
+      },
+      {
+        "id": "comment-utiliser-le-code",
+        "label": "Comment utiliser le code"
+      },
+      {
+        "id": "prix-apres-remise",
+        "label": "Prix après remise"
+      },
+      {
+        "id": "notre-avis-avant-achat",
+        "label": "Notre avis avant achat"
+      },
+      {
+        "id": "questions-frequentes",
+        "label": "Questions fréquentes"
+      }
+    ],
+    "summaryParagraphs": [
+      "Le code promo Lupi Coffee à retenir est LMC. Il permet d’obtenir 15% de remise sur l’offre indiquée au moment de l’achat, sous réserve que la marque maintienne les mêmes conditions dans son panier.",
+      "Cette page sert à aller droit au but : code à utiliser, prix estimé après remise, lien officiel et précautions avant achat. Le sujet reste lié au café de lupin, pas à une promesse santé exagérée.",
+      "Notre recommandation est simple : utiliser le code LMC, vérifier que la réduction apparaît bien avant paiement, puis comparer avec l’autre marque du comparatif si votre priorité est le prix, le goût ou la formule."
+    ],
+    "assets": [
+      "Code promo LMC clairement indiqué",
+      "Remise estimée de 15%",
+      "Lien vers le site officiel",
+      "Comparaison possible avec l’autre marque du comparatif"
+    ],
+    "considerations": [
+      "Les conditions commerciales peuvent changer",
+      "La remise doit être vérifiée dans le panier",
+      "Le lupin est un allergène connu"
+    ],
+    "sections": [
+      {
+        "id": "code-promo-actuel",
+        "heading": "Code promo Lupi Coffee actuel",
+        "paragraphs": [
+          "Le code promo à utiliser pour Lupi Coffee est LMC. C’est l’information principale de cette page, car elle permet d’éviter de chercher le code dans plusieurs articles ou sur des sites de coupons peu fiables.",
+          "La remise indiquée est de 15%. Elle doit toujours être confirmée dans le panier, car les marques peuvent modifier leurs conditions, exclure certains lots ou changer temporairement les offres disponibles.",
+          "Le plus propre est de passer par le site officiel, d’ajouter le produit au panier, puis de saisir le code avant le paiement. Si le montant ne bouge pas, il faut vérifier l’orthographe du code et les conditions affichées par la marque."
+        ]
+      },
+      {
+        "id": "comment-utiliser-le-code",
+        "heading": "Comment utiliser le code sans perdre la remise",
+        "paragraphs": [
+          "Copiez le code LMC, ouvrez le site officiel de Lupi Coffee, ajoutez le café de lupin ou la boisson chaude au panier, puis collez le code dans le champ prévu pour les promotions. La réduction doit apparaître avant validation de la commande.",
+          "Évitez de multiplier les codes ou de passer par une page marketplace si l’objectif est d’avoir une remise fiable. Les codes partenaires fonctionnent généralement mieux sur le site officiel que sur des revendeurs tiers.",
+          "Avant paiement, vérifiez trois éléments : le prix final, les frais de livraison et le produit sélectionné. C’est le seul moyen d’éviter une fausse bonne affaire où la remise est annulée par un panier mal configuré."
+        ]
+      },
+      {
+        "id": "prix-apres-remise",
+        "heading": "Prix après remise",
+        "paragraphs": [
+          "Le prix de référence affiché dans notre comparatif est 19,00 €. Avec une remise de 15%, le prix estimé passe à 17,10 €, hors frais de livraison éventuels et sous réserve des conditions en cours.",
+          "Ce prix sert surtout de repère pour comparer les deux marques. Lupi Coffee garde l’avantage du prix d’entrée, tandis qu’Arsène Boisson se positionne davantage comme une alternative plus gourmande et premium.",
+          "Si vous découvrez le café de lupin pour la première fois, le prix après remise compte autant que le goût attendu. Une première commande doit rester raisonnable, surtout si vous ne savez pas encore si le profil torréfié du lupin vous convient."
+        ]
+      },
+      {
+        "id": "notre-avis-avant-achat",
+        "heading": "Notre avis avant achat",
+        "paragraphs": [
+          "Lupi Coffee est pertinent si vous cherchez une boisson chaude sans caféine autour du lupin, mais le choix dépend de votre attente. Le code promo rend le test plus intéressant, sans transformer le produit en achat automatique.",
+          "Le café de lupin ne doit pas être présenté comme un café classique ni comme une solution miracle. C’est une alternative de rituel : plus douce, sans caféine, avec un goût végétal et torréfié à apprivoiser.",
+          "Notre conseil est donc de commencer simple : une boîte, un dosage raisonnable, quelques jours de test, puis comparaison avec l’autre option si vous voulez affiner le goût ou le prix."
+        ]
+      },
+      {
+        "id": "questions-frequentes",
+        "heading": "Questions fréquentes avant d’utiliser le code",
+        "paragraphs": [
+          "Le code peut-il expirer ? Oui, comme toute offre commerciale. Il faut donc vérifier le panier avant paiement plutôt que se fier uniquement à une capture ou à un ancien article.",
+          "Peut-on cumuler plusieurs codes ? Ce n’est généralement pas garanti. Le panier officiel indiquera si un cumul est accepté ou non.",
+          "Y a-t-il des précautions avec le lupin ? Oui. Le lupin est un allergène connu. Les personnes sensibles aux légumineuses ou à l’arachide doivent rester prudentes."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quel est le code promo Lupi Coffee ?",
+        "answer": "Le code promo indiqué est LMC, avec une remise estimée de 15% selon les conditions affichées par la marque."
+      },
+      {
+        "question": "Où saisir le code promo ?",
+        "answer": "Le code se saisit dans le panier ou au checkout du site officiel, avant le paiement."
+      },
+      {
+        "question": "La remise est-elle garantie ?",
+        "answer": "Non. Les conditions peuvent évoluer. Il faut vérifier que la remise s’applique bien dans le panier avant de commander."
+      },
+      {
+        "question": "Le café de lupin contient-il de la caféine ?",
+        "answer": "Le lupin ne contient naturellement pas de caféine. Il faut toutefois vérifier la fiche produit si la recette contient d’autres ingrédients."
+      }
+    ],
+    "tableRows": [
+      [
+        "Code à utiliser",
+        "LMC"
+      ],
+      [
+        "Remise estimée",
+        "15%"
+      ],
+      [
+        "Prix indicatif après remise",
+        "17,10 €"
+      ],
+      [
+        "À vérifier",
+        "Panier final et frais de livraison"
+      ]
+    ]
+  },
+  {
+    "slug": "code-promo-arsene-boisson",
+    "label": "Code promo Arsène",
+    "title": "Code promo Arsène Boisson : LMC10 -10% sur l’alternative café",
+    "meta": "Code promo Arsène Boisson : utilisez LMC10 pour obtenir -10% sur la boisson au lupin et pois chiche. Prix et avis avant achat.",
+    "h1": "Code promo Arsène Boisson : -10% avec le code LMC10 sur l’alternative au café",
+    "focus": "Arsène Boisson",
+    "intent": "code promo avant achat",
+    "angle": "aider à utiliser le code LMC10 et comprendre le prix final",
+    "product": 1,
+    "heroImage": "/images/content/code-promo-arsene-boisson-natural.webp",
+    "inlineImage": "/images/content/code-promo-arsene-boisson-inline-natural.webp",
+    "imageCaption": "Le bon réflexe : copier le code, passer par le site officiel, puis vérifier la remise dans le panier avant paiement.",
+    "readingTime": "8 min de lecture",
+    "toc": [
+      {
+        "id": "code-promo-actuel",
+        "label": "Code promo actuel"
+      },
+      {
+        "id": "comment-utiliser-le-code",
+        "label": "Comment utiliser le code"
+      },
+      {
+        "id": "prix-apres-remise",
+        "label": "Prix après remise"
+      },
+      {
+        "id": "notre-avis-avant-achat",
+        "label": "Notre avis avant achat"
+      },
+      {
+        "id": "questions-frequentes",
+        "label": "Questions fréquentes"
+      }
+    ],
+    "summaryParagraphs": [
+      "Le code promo Arsène Boisson à retenir est LMC10. Il permet d’obtenir 10% de remise sur l’offre indiquée au moment de l’achat, sous réserve que la marque maintienne les mêmes conditions dans son panier.",
+      "Cette page sert à aller droit au but : code à utiliser, prix estimé après remise, lien officiel et précautions avant achat. Le sujet reste lié au café de lupin, pas à une promesse santé exagérée.",
+      "Notre recommandation est simple : utiliser le code LMC10, vérifier que la réduction apparaît bien avant paiement, puis comparer avec l’autre marque du comparatif si votre priorité est le prix, le goût ou la formule."
+    ],
+    "assets": [
+      "Code promo LMC10 clairement indiqué",
+      "Remise estimée de 10%",
+      "Lien vers le site officiel",
+      "Comparaison possible avec l’autre marque du comparatif"
+    ],
+    "considerations": [
+      "Les conditions commerciales peuvent changer",
+      "La remise doit être vérifiée dans le panier",
+      "Le lupin est un allergène connu"
+    ],
+    "sections": [
+      {
+        "id": "code-promo-actuel",
+        "heading": "Code promo Arsène Boisson actuel",
+        "paragraphs": [
+          "Le code promo à utiliser pour Arsène Boisson est LMC10. C’est l’information principale de cette page, car elle permet d’éviter de chercher le code dans plusieurs articles ou sur des sites de coupons peu fiables.",
+          "La remise indiquée est de 10%. Elle doit toujours être confirmée dans le panier, car les marques peuvent modifier leurs conditions, exclure certains lots ou changer temporairement les offres disponibles.",
+          "Le plus propre est de passer par le site officiel, d’ajouter le produit au panier, puis de saisir le code avant le paiement. Si le montant ne bouge pas, il faut vérifier l’orthographe du code et les conditions affichées par la marque."
+        ]
+      },
+      {
+        "id": "comment-utiliser-le-code",
+        "heading": "Comment utiliser le code sans perdre la remise",
+        "paragraphs": [
+          "Copiez le code LMC10, ouvrez le site officiel de Arsène Boisson, ajoutez le café de lupin ou la boisson chaude au panier, puis collez le code dans le champ prévu pour les promotions. La réduction doit apparaître avant validation de la commande.",
+          "Évitez de multiplier les codes ou de passer par une page marketplace si l’objectif est d’avoir une remise fiable. Les codes partenaires fonctionnent généralement mieux sur le site officiel que sur des revendeurs tiers.",
+          "Avant paiement, vérifiez trois éléments : le prix final, les frais de livraison et le produit sélectionné. C’est le seul moyen d’éviter une fausse bonne affaire où la remise est annulée par un panier mal configuré."
+        ]
+      },
+      {
+        "id": "prix-apres-remise",
+        "heading": "Prix après remise",
+        "paragraphs": [
+          "Le prix de référence affiché dans notre comparatif est 25,40 €. Avec une remise de 10%, le prix estimé passe à 22,86 €, hors frais de livraison éventuels et sous réserve des conditions en cours.",
+          "Ce prix sert surtout de repère pour comparer les deux marques. Lupi Coffee garde l’avantage du prix d’entrée, tandis qu’Arsène Boisson se positionne davantage comme une alternative plus gourmande et premium.",
+          "Si vous découvrez le café de lupin pour la première fois, le prix après remise compte autant que le goût attendu. Une première commande doit rester raisonnable, surtout si vous ne savez pas encore si le profil torréfié du lupin vous convient."
+        ]
+      },
+      {
+        "id": "notre-avis-avant-achat",
+        "heading": "Notre avis avant achat",
+        "paragraphs": [
+          "Arsène Boisson est pertinent si vous cherchez une boisson chaude sans caféine autour du lupin, mais le choix dépend de votre attente. Le code promo rend le test plus intéressant, sans transformer le produit en achat automatique.",
+          "Le café de lupin ne doit pas être présenté comme un café classique ni comme une solution miracle. C’est une alternative de rituel : plus douce, sans caféine, avec un goût végétal et torréfié à apprivoiser.",
+          "Notre conseil est donc de commencer simple : une boîte, un dosage raisonnable, quelques jours de test, puis comparaison avec l’autre option si vous voulez affiner le goût ou le prix."
+        ]
+      },
+      {
+        "id": "questions-frequentes",
+        "heading": "Questions fréquentes avant d’utiliser le code",
+        "paragraphs": [
+          "Le code peut-il expirer ? Oui, comme toute offre commerciale. Il faut donc vérifier le panier avant paiement plutôt que se fier uniquement à une capture ou à un ancien article.",
+          "Peut-on cumuler plusieurs codes ? Ce n’est généralement pas garanti. Le panier officiel indiquera si un cumul est accepté ou non.",
+          "Y a-t-il des précautions avec le lupin ? Oui. Le lupin est un allergène connu. Les personnes sensibles aux légumineuses ou à l’arachide doivent rester prudentes."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quel est le code promo Arsène Boisson ?",
+        "answer": "Le code promo indiqué est LMC10, avec une remise estimée de 10% selon les conditions affichées par la marque."
+      },
+      {
+        "question": "Où saisir le code promo ?",
+        "answer": "Le code se saisit dans le panier ou au checkout du site officiel, avant le paiement."
+      },
+      {
+        "question": "La remise est-elle garantie ?",
+        "answer": "Non. Les conditions peuvent évoluer. Il faut vérifier que la remise s’applique bien dans le panier avant de commander."
+      },
+      {
+        "question": "Le café de lupin contient-il de la caféine ?",
+        "answer": "Le lupin ne contient naturellement pas de caféine. Il faut toutefois vérifier la fiche produit si la recette contient d’autres ingrédients."
+      }
+    ],
+    "tableRows": [
+      [
+        "Code à utiliser",
+        "LMC10"
+      ],
+      [
+        "Remise estimée",
+        "10%"
+      ],
+      [
+        "Prix indicatif après remise",
+        "22,86 €"
+      ],
+      [
+        "À vérifier",
+        "Panier final et frais de livraison"
       ]
     ]
   }

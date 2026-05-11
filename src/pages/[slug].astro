@@ -68,7 +68,7 @@ const toAbs = (value: string) => /^https?:\/\//i.test(value) ? value : new URL(v
               <section id={section.id} class="article-section rich-text">
                 <h2>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-                {index === 1 && <ContentImage src={page.heroImage} alt={`${page.h1} - illustration éditoriale`} caption="Une bonne alternative au café doit être jugée sur le goût, le rituel et la tolérance au quotidien." />}
+                {index === 1 && <ContentImage src={page.inlineImage ?? page.heroImage} alt={`${page.h1} - illustration éditoriale naturelle`} caption={page.imageCaption ?? "Une bonne alternative au café doit être jugée sur le goût, le rituel et la tolérance au quotidien."} />}
                 {index === 2 && <div class="mid-card-wrap"><ReviewPromoCard product={topProduct} /></div>}
                 {index === 3 && <InnerNote emoji="✅" text="Le bon choix n’est pas forcément le plus spectaculaire : c’est celui que vous aurez envie de boire régulièrement, sans gêne digestive ni excitation liée à la caféine." />}
               </section>
