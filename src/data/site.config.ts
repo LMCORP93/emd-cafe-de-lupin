@@ -136,7 +136,7 @@ const config: SiteConfig = {
     description: 'Comparatif café de lupin 2026 : avis, prix, codes promo, goût et choix entre Lupi Coffee et Arsène Boisson pour remplacer le café sans caféine.',
     ogImage: '/images/content/cafe-de-lupin-hero.webp',
   },
-  analyticsMeasurementId: undefined,
+  analyticsMeasurementId: 'G-QRQ4HLNMX6',
   breadcrumbs: [{ label: 'Comparatif café de lupin', href: '/' }],
   quickSummary: {
     assets: [
