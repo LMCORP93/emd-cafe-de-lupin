@@ -10,6 +10,7 @@ import InnerNote from '@/components/InnerNote.astro';
 import ComparisonTable from '@/components/ComparisonTable.astro';
 import EditorialCriteria from '@/components/EditorialCriteria.astro';
 import config from '@/data/site.config';
+import ArticleGrid from '@/components/ArticleGrid.astro';
 
 const topProduct = config.products[0];
 
@@ -217,6 +218,7 @@ const productSchema = (p: typeof config.products[number]) => ({
       </div>
     </div>
   </main>
+  <ArticleGrid />
 </BaseLayout>
 
 <style>

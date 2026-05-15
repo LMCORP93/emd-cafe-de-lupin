@@ -11,6 +11,7 @@ import FAQSection from '@/components/FAQSection.astro';
 import SidebarCTA from '@/components/SidebarCTA.astro';
 import config from '@/data/site.config';
 import { articlePages } from '@/data/articlePages';
+import ArticleGrid from '@/components/ArticleGrid.astro';
 
 export function getStaticPaths() {
   return articlePages.map((page) => ({ params: { slug: page.slug }, props: { page } }));
@@ -84,6 +85,7 @@ const toAbs = (value: string) => /^https?:\/\//i.test(value) ? value : new URL(v
       </div>
     </div>
   </main>
+  <ArticleGrid />
 </BaseLayout>
 
 <style>
