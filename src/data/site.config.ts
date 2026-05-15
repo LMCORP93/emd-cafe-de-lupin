@@ -46,7 +46,7 @@ export interface SiteConfig {
   faq: { question: string; answer: string }[];
   products: Product[];
   tocItems: { id: string; label: string }[];
-  pages: { type: 'comparatif' | 'blog'; label: string; slug: string }[];
+  pages: { type: 'comparatif' | 'blog'; label: string; slug: string; image?: string }[];
 }
 
 const products: Product[] = [
@@ -174,16 +174,16 @@ const config: SiteConfig = {
   ],
   pages: [
     { type: 'comparatif', label: 'Comparatif', slug: '/', image: '/images/content/cafe-de-lupin-hero.webp' },
-    { type: 'blog', label: "Avis Lupi Coffee", slug: '/avis-lupi-coffee/' },
-    { type: 'blog', label: "Avis Arsène", slug: '/avis-arsene-boisson/' },
-    { type: 'blog', label: "Danger", slug: '/cafe-de-lupin-danger/' },
-    { type: 'blog', label: "Bienfaits", slug: '/cafe-de-lupin-bienfaits/' },
-    { type: 'blog', label: "Lupin vs café", slug: '/cafe-de-lupin-vs-cafe/' },
-    { type: 'blog', label: "Sans caféine", slug: '/alternative-au-cafe-sans-cafeine/' },
-    { type: 'blog', label: "Instantané", slug: '/cafe-de-lupin-instantane/' },
-    { type: 'blog', label: "Recette", slug: '/cafe-de-lupin-recette/' },
-    { type: 'blog', label: "Farine lupin", slug: '/farine-de-lupin-bienfaits/' },
-    { type: 'blog', label: "Graines lupin", slug: '/graines-de-lupin-bienfaits/' },
+    { type: 'blog', label: "Avis Lupi Coffee", slug: '/avis-lupi-coffee/', image: '/images/content/avis-lupi-coffee-natural.webp' },
+    { type: 'blog', label: "Avis Arsène", slug: '/avis-arsene-boisson/', image: '/images/content/avis-arsene-boisson-natural.webp' },
+    { type: 'blog', label: "Danger", slug: '/cafe-de-lupin-danger/', image: '/images/content/cafe-de-lupin-danger-natural.webp' },
+    { type: 'blog', label: "Bienfaits", slug: '/cafe-de-lupin-bienfaits/', image: '/images/content/cafe-de-lupin-bienfaits-natural.webp' },
+    { type: 'blog', label: "Lupin vs café", slug: '/cafe-de-lupin-vs-cafe/', image: '/images/content/cafe-de-lupin-vs-cafe-natural.webp' },
+    { type: 'blog', label: "Sans caféine", slug: '/alternative-au-cafe-sans-cafeine/', image: '/images/content/alternative-au-cafe-sans-cafeine-natural.webp' },
+    { type: 'blog', label: "Instantané", slug: '/cafe-de-lupin-instantane/', image: '/images/content/cafe-de-lupin-instantane-natural.webp' },
+    { type: 'blog', label: "Recette", slug: '/cafe-de-lupin-recette/', image: '/images/content/cafe-de-lupin-recette-natural.webp' },
+    { type: 'blog', label: "Farine lupin", slug: '/farine-de-lupin-bienfaits/', image: '/images/content/farine-de-lupin-bienfaits-natural.webp' },
+    { type: 'blog', label: "Graines lupin", slug: '/graines-de-lupin-bienfaits/', image: '/images/content/graines-de-lupin-bienfaits-natural.webp' },
   ],
 };
 
