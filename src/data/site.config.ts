@@ -173,7 +173,7 @@ const config: SiteConfig = {
     { id: 'faq', label: 'FAQ' },
   ],
   pages: [
-    { type: 'comparatif', label: 'Comparatif', slug: '/' },
+    { type: 'comparatif', label: 'Comparatif', slug: '/', image: '/images/content/cafe-de-lupin-hero.webp' },
     { type: 'blog', label: "Avis Lupi Coffee", slug: '/avis-lupi-coffee/' },
     { type: 'blog', label: "Avis Arsène", slug: '/avis-arsene-boisson/' },
     { type: 'blog', label: "Danger", slug: '/cafe-de-lupin-danger/' },
