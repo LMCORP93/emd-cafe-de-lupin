@@ -19,3 +19,6 @@
 - Sujet : café de lupin, alternatives au café sans caféine et lupin alimentaire.
 - Les codes promo et prix doivent être vérifiés sur les sites officiels avant citation.
 - Contenu éditorial informatif, sans promesse médicale.
+
+## Sitemap
+- [Sitemap](https://cafe-de-lupin.fr/sitemap-index.xml)
