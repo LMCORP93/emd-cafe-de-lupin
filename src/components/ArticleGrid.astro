@@ -1,5 +1,6 @@
 ---
 import config from '@/data/site.config';
+import { articlePages } from '@/data/articlePages';
 
 interface Article {
   title?: string;
@@ -47,6 +48,15 @@ const isContentPage = (item: Article) => {
 };
 
 const normalizeHref = (item: Article) => item.href || item.slug || '/';
+const normalizeSlugKey = (value = '') => value.replace(/^\//, '').replace(/\/$/, '').replace(/^#/, '');
+const articleImageBySlug = new Map(
+  articlePages.map((article) => [normalizeSlugKey(article.slug), article.heroImage])
+);
+const imageForArticle = (item: Article) => {
+  const href = normalizeHref(item);
+  const key = normalizeSlugKey(href);
+  return item.image || articleImageBySlug.get(key) || config.seo?.ogImage || '/og-image.jpg';
+};
 const current = Astro.props.currentPath || Astro.url.pathname;
 const lang = detectLang();
 const copy = localeByLang[lang] || localeByLang.fr;
@@ -59,7 +69,7 @@ const sourceArticles = (Astro.props.articles && Astro.props.articles.length > 0)
       .map((item) => ({
         title: item.title || item.label || 'Guide',
         excerpt: item.excerpt || item.description || copy.fallback,
-        image: item.image || config.seo?.ogImage || '/og-image.jpg',
+        image: imageForArticle(item),
         href: normalizeHref(item),
       }));
 

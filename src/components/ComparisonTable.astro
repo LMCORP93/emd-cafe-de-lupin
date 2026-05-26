@@ -36,9 +36,12 @@ const columnTemplate = headers.length === 3
     {rows.map((row) => (
       <div class={`table_grid ${row.highlight ? 'table_grid--highlight' : ''}`} role="row">
         {row.cells.map((cell, j) => (
-          <div class={`table_grid-col ${j === 0 ? 'table_grid-col-left' : 'table_grid-col-right'}`} role="cell" data-label={headers[j]?.label}>
-            {cell}
-          </div>
+          <div
+            class={`table_grid-col ${j === 0 ? 'table_grid-col-left' : 'table_grid-col-right'}`}
+            role="cell"
+            data-label={headers[j]?.label}
+            set:html={String(cell)}
+          />
         ))}
       </div>
     ))}
