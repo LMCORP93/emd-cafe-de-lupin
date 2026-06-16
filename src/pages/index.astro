@@ -39,6 +39,14 @@ const comparatifFaq = [
     question: "Où acheter du café de lupin ?",
     answer: "Les deux options les plus simples sont les sites officiels des marques. Lupi Coffee propose le code LMC pour une remise de 15 %, et Arsène Boisson propose le code LMC10 pour une remise de 10 %.",
   },
+  {
+    question: "Quel code promo utiliser pour Lupi Coffee ?",
+    answer: "Le code promo disponible pour Lupi Coffee est LMC, avec une remise de 15 % sur votre commande. Pour Arsène Boisson, le code est LMC10, avec une remise de 10 %. Les conditions peuvent évoluer : vérifiez toujours le montant final au checkout avant de valider.",
+  },
+  {
+    question: "Lupi Coffee et Arsène Boisson ont-ils le même goût que le café ?",
+    answer: "Non. Le café de lupin rappelle le registre torréfié et chaud du café, mais il est moins amer et plus végétal. Lupi Coffee est plus proche du lupin pur, Arsène Boisson est plus ronde avec sa base lupin et pois chiche.",
+  },
 ];
 
 const toAbsoluteUrl = (value: string) => /^https?:\/\//i.test(value) ? value : new URL(value, config.domain).toString();
@@ -104,7 +112,7 @@ const productSchema = (p: typeof config.products[number]) => ({
   })} />
 
   <BlogHero
-    title="Meilleur café de lupin : comparatif 2026"
+    title={config.seo.title}
     description="Lupi Coffee ou Arsène Boisson ? Voici notre comparatif clair des meilleures marques françaises de café de lupin pour remplacer le café sans caféine."
     author={config.author.name}
     authorAvatar={config.author.avatar}
@@ -133,9 +141,9 @@ const productSchema = (p: typeof config.products[number]) => ({
           <div class="content-column">
             <section id="introduction" class="rich-text intro-section">
               <h2>Notre comparatif des cafés de lupin</h2>
-              <p>Le café de lupin répond à une demande très simple : garder le rituel du café, sans caféine, sans nervosité et avec une boisson plus douce pour le quotidien. En France, l’intérêt SEO est réel avec environ <strong>1 600 recherches mensuelles</strong> sur « café de lupin », et l’offre commence seulement à se structurer.</p>
+              <p>Le café de lupin est une alternative au café classique préparée à partir de lupin torréfié — naturellement sans caféine, avec un profil torréfié plus doux. C’est le choix de ceux qui veulent garder le rituel de la tasse chaude sans les effets de la caféine.</p>
               <p>Ce comparatif met en avant deux marques françaises particulièrement pertinentes : <strong>Lupi Coffee</strong> et <strong>Arsène Boisson</strong>. Ce ne sont pas des produits identiques. Lupi Coffee est le choix le plus direct, centré sur le café de lupin bio. Arsène Boisson propose une alternative plus gourmande, avec lupin et pois chiche torréfiés.</p>
-              <p>Notre recommandation est donc claire : <strong>Lupi Coffee en numéro 1</strong> si vous voulez découvrir le café de lupin dans sa forme la plus directe, et <strong>Arsène Boisson en numéro 2</strong> si vous cherchez une boisson chaude sans caféine avec un profil plus rond.</p>
+              <p>Notre recommandation est donc claire : <strong>Lupi Coffee en numéro 1</strong> si vous voulez découvrir le café de lupin dans sa forme la plus directe, et <strong>Arsène Boisson en numéro 2</strong> si vous cherchez une boisson chaude sans caféine avec un profil plus rond. Le code LMC donne une remise de 15 % chez Lupi Coffee. Le code LMC10 donne 10 % chez Arsène Boisson.</p>
             </section>
 
             <TableOfContents items={config.tocItems} />
