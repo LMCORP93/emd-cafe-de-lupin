@@ -132,7 +132,7 @@ const config: SiteConfig = {
     bio: 'Rédacteur spécialisé en compléments alimentaires, boissons fonctionnelles et alternatives naturelles au café.',
   },
   seo: {
-    title: 'Meilleur café de lupin 2026 : Lupi Coffee, Arsène + codes promo',
+    title: 'Meilleur café de lupin 2026 : Lupi Coffee et Arsène',
     description: 'Comparatif café de lupin 2026 : Lupi Coffee n°1 et Arsène Boisson. Alternatives sans caféine, françaises et bio. Codes promo LMC et LMC10.',
     ogImage: '/images/content/cafe-de-lupin-hero.webp',
   },

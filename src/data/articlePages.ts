@@ -1970,7 +1970,7 @@ export const articlePages = [
   {
     "slug": "code-promo-arsene-boisson",
     "label": "Code promo Arsène",
-    "title": "Code promo Arsène Boisson : LMC10 -10% sur l’alternative café",
+    "title": "Code promo Arsène Boisson : LMC10 pour -10%",
     "meta": "Code promo Arsène Boisson : utilisez LMC10 pour obtenir -10% sur la boisson au lupin et pois chiche. Prix et avis avant achat.",
     "h1": "Code promo Arsène Boisson : -10% avec le code LMC10 sur l’alternative au café",
     "focus": "Arsène Boisson",
