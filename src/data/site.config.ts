@@ -64,7 +64,7 @@ const products: Product[] = [
     originalPrice: '19,00 €',
     discountPrice: '17,10 €',
     affiliateLink: 'https://www.lupicoffee.com/products/cafe-de-lupin-bio-boite-de-decouverte?ref=LMC',
-    origin: '🇫🇷 France',
+    origin: 'France',
     availability: 'Livraison en France possible via la boutique officielle ou un revendeur',
     productType: 'Café de lupin bio sans caféine',
     pros: [
@@ -94,7 +94,7 @@ const products: Product[] = [
     originalPrice: '25,40 €',
     discountPrice: '22,86 €',
     affiliateLink: 'https://arseneboissons.fr/LMC10',
-    origin: '🇫🇷 France',
+    origin: 'France',
     availability: 'Livraison en France possible via la boutique officielle ou un revendeur',
     productType: 'Alternative au café à base de lupin et pois chiche torréfiés',
     pros: [
